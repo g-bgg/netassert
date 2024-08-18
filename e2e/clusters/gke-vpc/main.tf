@@ -25,6 +25,7 @@ resource "google_container_cluster" "e2etest" {
   ip_allocation_policy {}
   node_config {
     machine_type = "e2-standard-2"
+    disk_size_gb = 50
   }
 
   release_channel {
